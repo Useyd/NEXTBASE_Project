@@ -7,7 +7,7 @@ import com.NextBase.utilities.ConfigurationReader;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AC4 extends TestBase {
+public class AC5 extends TestBase {
 
     @Test
     public void loginAshelpDesk35() throws InterruptedException {
@@ -36,18 +36,12 @@ public class AC4 extends TestBase {
         extentLogger.info("Click Event");
         dashboard.event.click();
 
-        extentLogger.info("Click Quote text Button");
-        BrowserUtils.waitForVisibility(dashboard.quoteButton,20).click();
+        extentLogger.info("Click Visual Editor Button");
+        BrowserUtils.waitForVisibility(dashboard.visualEditor,20).click();
 
-        driver.switchTo().frame(dashboard.iFrame);
-        Thread.sleep(2000);
+        extentLogger.info("Check if text-bar visible");
+        Assert.assertTrue(dashboard.toolBar.isDisplayed());
 
-        extentLogger.info("Write something to Quote block");
-        dashboard.quoteBlock.sendKeys("Something bla bla");
-
-        driver.switchTo().defaultContent();
-        extentLogger.info("Click Send Button");
-        BrowserUtils.waitForClickablility(dashboard.sendButton,20).click();
 
     }
 
@@ -78,19 +72,11 @@ public class AC4 extends TestBase {
         extentLogger.info("Click Event");
         dashboard.event.click();
 
-        extentLogger.info("Click Quote text Button");
-        BrowserUtils.waitForVisibility(dashboard.quoteButton,20).click();
+        extentLogger.info("Click Visual Editor Button");
+        BrowserUtils.waitForVisibility(dashboard.visualEditor,20).click();
 
-
-        driver.switchTo().frame(dashboard.iFrame);
-        Thread.sleep(2000);
-
-        extentLogger.info("Write something to Quote block");
-        dashboard.quoteBlock.sendKeys("Something bla bla");
-
-        driver.switchTo().defaultContent();
-        extentLogger.info("Click Send Button");
-        BrowserUtils.waitForClickablility(dashboard.sendButton,20).click();
+        extentLogger.info("Check if text-bar visible");
+        Assert.assertTrue(dashboard.toolBar.isDisplayed());
     }
 
     @Test
@@ -120,18 +106,11 @@ public class AC4 extends TestBase {
         extentLogger.info("Click Event");
         dashboard.event.click();
 
-        extentLogger.info("Click Quote text Button");
-        BrowserUtils.waitForVisibility(dashboard.quoteButton,20).click();
+        extentLogger.info("Click Visual Editor Button");
+        BrowserUtils.waitForVisibility(dashboard.visualEditor,20).click();
 
-        driver.switchTo().frame(dashboard.iFrame);
-        Thread.sleep(2000);
-
-        extentLogger.info("Write something to Quote block");
-        dashboard.quoteBlock.sendKeys("Something bla bla");
-
-        driver.switchTo().defaultContent();
-        extentLogger.info("Click Send Button");
-        BrowserUtils.waitForClickablility(dashboard.sendButton,20).click();
+        extentLogger.info("Check if text-bar visible");
+        Assert.assertTrue(dashboard.toolBar.isDisplayed());
 
 
     }
@@ -163,18 +142,11 @@ public class AC4 extends TestBase {
         extentLogger.info("Click Event");
         dashboard.event.click();
 
-        extentLogger.info("Click Quote text Button");
-        BrowserUtils.waitForVisibility(dashboard.quoteButton,20).click();
+        extentLogger.info("Click Visual Editor Button");
+        BrowserUtils.waitForVisibility(dashboard.visualEditor,20).click();
 
-        driver.switchTo().frame(dashboard.iFrame);
-        Thread.sleep(2000);
-
-        extentLogger.info("Write something to Quote block");
-        dashboard.quoteBlock.sendKeys("Something bla bla");
-
-        driver.switchTo().defaultContent();
-        extentLogger.info("Click Send Button");
-        BrowserUtils.waitForClickablility(dashboard.sendButton,20).click();
+        extentLogger.info("Check if text-bar visible");
+        Assert.assertTrue(dashboard.toolBar.isDisplayed());
 
     }
 
@@ -205,19 +177,11 @@ public class AC4 extends TestBase {
         extentLogger.info("Click Event");
         dashboard.event.click();
 
-        extentLogger.info("Click Quote text Button");
-        BrowserUtils.waitForVisibility(dashboard.quoteButton,20).click();
+        extentLogger.info("Click Visual Editor Button");
+        BrowserUtils.waitForVisibility(dashboard.visualEditor,20).click();
 
-        driver.switchTo().frame(dashboard.iFrame);
-        Thread.sleep(2000);
-
-        extentLogger.info("Write something to Quote block");
-        dashboard.quoteBlock.sendKeys("Something bla bla");
-
-        driver.switchTo().defaultContent();
-
-        extentLogger.info("Click Send Button");
-        BrowserUtils.waitForClickablility(dashboard.sendButton,20).click();;
+        extentLogger.info("Check if text-bar visible");
+        Assert.assertTrue(dashboard.toolBar.isDisplayed());
 
 
     }
@@ -249,19 +213,11 @@ public class AC4 extends TestBase {
         extentLogger.info("Click Event");
         dashboard.event.click();
 
-        extentLogger.info("Click Quote text Button");
-        BrowserUtils.waitForVisibility(dashboard.quoteButton,20).click();
+        extentLogger.info("Click Visual Editor Button");
+        BrowserUtils.waitForVisibility(dashboard.visualEditor,20).click();
 
-        driver.switchTo().frame(dashboard.iFrame);
-        Thread.sleep(2000);
-
-        extentLogger.info("Write something to Quote block");
-        dashboard.quoteBlock.sendKeys("Something bla bla");
-
-        driver.switchTo().defaultContent();
-        extentLogger.info("Click Send Button");
-        BrowserUtils.waitForClickablility(dashboard.sendButton,20).click();
+        extentLogger.info("Check if text-bar visible");
+        Assert.assertTrue(dashboard.toolBar.isDisplayed());
 
     }
-
 }

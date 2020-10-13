@@ -125,8 +125,48 @@ public class Dashboard {
     @FindBy(xpath = "//blockquote[1]")
     public WebElement quoteBlock;
 
-    @FindBy(xpath = "(//*[@class=\"bx-editor-iframe\"])[1]")
+    @FindBy(xpath = "(//iframe)[2]")
     public WebElement iFrame;
+
+    @FindBy(xpath = "(//*[@id=\"blog-submit-button-save\"])[1]")
+    public WebElement sendButton;
+
+    @FindBy(xpath = "//*[@id=\"lhe_button_editor_blogPostForm_calendar\"]")
+    public WebElement visualEditor;
+
+    @FindBy(xpath = "//*[@id=\"bx-html-editor-tlbr-oCalEditorcal_3Jcl\"]")
+    public WebElement toolBar;
+
+    @FindBy(xpath = "//*[@id=\"feed-cal-event-fromcal_3Jcl\"]")
+    public WebElement startingDate;
+
+    @FindBy(xpath = "//*[@id=\"feed_cal_event_from_timecal_3Jcl\"]")
+    public WebElement startingTime;
+
+    @FindBy(xpath = "//*[@id=\"feed-cal-event-tocal_3Jcl\"]")
+    public WebElement endingDate;
+
+    @FindBy(xpath = "//*[@id=\"feed_cal_event_to_timecal_3Jcl\"]")
+    public WebElement endingTime;
+
+    @FindBy(xpath = "//*[@id=\"feed-cal-tz-switchcal_3Jcl\"]/span[1]")
+    public WebElement timeZone;
+
+    @FindBy(xpath = "//*[@id=\"feed-cal-tz-fromcal_3Jcl\"]")
+    public WebElement fromTimeZone;
+
+    @FindBy(xpath = "//*[@id=\"feed-cal-tz-tocal_3Jcl\"]")
+    public WebElement toTimeZone;
+
+    @FindBy(xpath = "//*[@id=\"event-remind_countcal_3Jcl\"]")
+    public WebElement reminderNumber;
+
+    @FindBy(xpath = "//*[@id=\"event-remind_typecal_3Jcl\"]")
+    public WebElement reminderValuetype;
+
+    @FindBy(xpath = "//*[@id=\"event-remindercal_3Jcl\"]")
+    public WebElement setRemCheckBx;
+
 
 
 
