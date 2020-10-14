@@ -167,6 +167,43 @@ public class Dashboard {
     @FindBy(xpath = "//*[@id=\"event-remindercal_3Jcl\"]")
     public WebElement setRemCheckBx;
 
+    @FindBy(xpath = "//*[@id=\"event-locationcal_3Jcl\"]")
+    public WebElement eventLocation;
+
+    @FindBy(xpath = "//div[@id='bxecmr_0']")
+    public WebElement eventOpsPopUp;
+
+    @FindBy(xpath = "//*[@id=\"feed-event-dest-add-link\"]")
+    public WebElement addMember;
+
+    @FindBy(xpath = "//*[@id=\"feed-event-dest-add-link\"]")
+    public WebElement addMore;
+
+    @FindBy(xpath = "//*[@id=\"feed-event-dest-input\"]")
+    public WebElement memberInput;
+
+    @FindBy(xpath = "//*[@id=\"feed-event-dest-input-box\"]")
+    public WebElement memberInputBox;
+
+    @FindBy(xpath = "//*[@id=\"destDepartmentTab_calnAJEM3\"]")
+    public WebElement employeesAndDepart;
+
+    @FindBy(xpath = "//*[@id=\"bx-lm-box-last-content\"]/table/tr/td/div[2]/div[2]/div[1]/a/div[2]")
+    public  WebElement itOption;
+
+    @FindBy(xpath = "//*[@id=\"bx-lm-box-last-content\"]/table/tr/td/div[2]/div[2]/div[2]/a/span/div[1]")
+    public WebElement checkforAll;
+
+    @FindBy(xpath = "//*[@id=\"calnAJEM3_search_U493\"]")
+    public WebElement searchForGroup;
+
+    @FindBy(xpath = "//*[@id=\"popup-window-content-BXSocNetLogDestination\"]")
+    public WebElement memberPopUp;
+
+    @FindBy(xpath = "//*[@id=\"feed-cal-additional-show\"]/span[1]")
+    public WebElement moreButton;
+
+
 
 
 
